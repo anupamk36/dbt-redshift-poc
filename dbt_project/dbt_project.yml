@@ -1,0 +1,16 @@
+name: 'anonymizer_project'
+version: '1.0'
+config-version: 2
+
+profile: 'anonymizer_profile'
+
+model-paths: ['models']
+seed-paths: ['seeds']
+data-paths: ['data']
+macro-paths: ['macros']
+
+models:
+  anonymizer_project:
+    staging:
+      +materialized: view
+    +materialized: table

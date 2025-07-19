@@ -1,0 +1,10 @@
+version: 2
+seeds:
+  - name: pii_fields
+    config:
+      column_types:
+        field: string
+    columns:
+      - name: field
+        tests:
+          - not_null
